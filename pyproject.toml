@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subnx"
+version = "0.1.0"
+authors = [
+    { name = "Humberto Manuel Cabrera", email = "humbertomanuel_cabrera@outlook.es" },
+]
+description = "High-concurrency event-driven network framework and SDK"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+dependencies = ["psutil>=5.9.0"]
+
+
+[tool.setuptools.packages.find]
+include = ["subnx*"]
+exclude = ["examples*", "tests*"]

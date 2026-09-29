@@ -1,0 +1,45 @@
+# Bytecode / caché
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales (aquí se instalan las librerías)
+.venv/
+venv/
+env/
+ENV/
+
+# Empaquetado / publicación en PyPI
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+wheels/
+pip-wheel-metadata/
+.pypirc
+
+# Pruebas y herramientas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Secretos y configuración local (api keys, hosts)
+.env
+.env.*
+*.pem
+*.key
+
+# Configs locales en TOML (pueden traer api keys/hosts).
+# pyproject.toml SÍ se sube: lo necesita el empaquetado del driver.
+*.toml
+!pyproject.toml
+
+# IDE / sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
